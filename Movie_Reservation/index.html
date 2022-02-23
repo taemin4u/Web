@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticketing</title>
+    <script src="https://kit.fontawesome.com/7cbf5e78b7.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Ticketing movie">
+    <meta author="Taemin Kim">
+    <script src="./main.js" defer="defer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="make_background_dark"></div>
+    <div class="movieContainer">
+        <div class="imagebox">
+            
+        </div>
+        <div class="reservation"> 
+            <div class="selectmovie">
+                <select name="movie" id="movielist">
+                    <option value="default" selected>Select Movie</option>
+                    <option value="frozen" data-price="10">Frozen(10$)</option>
+                    <option value="toystory" data-price="8">Toy Story(8$)</option>
+                    <option value="insideout" data-price="9">Inside Out(9$)</option>
+                    <option value="coco" data-price="10">Coco(10$)</option>
+                </select>
+                <input type="text" class="people" placeholder="Number of Reservation">
+            </div>
+            <div class="seatinginfo">
+                <div class="available">
+                    <div class="available__box"></div>
+                    <p class="available__title">Available</p>
+                </div>
+                <div class="selected">
+                    <div class="selected__box"></div>
+                    <p class="selected__title">Selected</p>
+                </div>
+                <div class="occupied">
+                    <div class="occupied_box"></div>
+                    <p class="occupied__title">Occupied</p>
+                </div>
+            </div>
+                
+            <div class="screen">
+
+            </div>
+
+            <div class="seats">
+                <div class="twoline1">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat seat__occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="fourline">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat seat__occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat seat__occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat seat__occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="twoline2">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat seat__occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat seat__occupied"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <p class="conclusion">
+                You have selected <span class="num">0</span> seats for price of $ <span class="price">0</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
